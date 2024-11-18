@@ -4,7 +4,7 @@ To make a request of the microservice, the requesting program needs to have a te
 a team ID compatable with the API, and have imported 'requests'. The request must be in the format: 
 requests.get("http://localhost:5001/team_stats/{team_id}"), and the dictionary of stats will be received in .json format.
 
-[Sequence UML ](/UML.png)
+[Sequence UML](/UML.png)
 
 The dictionary keys are:
 'name'
