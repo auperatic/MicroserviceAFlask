@@ -96,7 +96,7 @@ def get_team_stats(team_id):
             'field_goals_made': extract_stats(statistics_data.get('record', {}), 'field_goals', 'made'),
             'kickoff_returns': extract_stats(statistics_data.get('record', {}), 'kickoffs', 'return_yards')
         })
-        # Render stats:
+        # Return stats:
         return jsonify(team_info)
         
     # If errors encountered, return error message
@@ -104,4 +104,4 @@ def get_team_stats(team_id):
         return jsonify({'error': f'An error occurred while fetching team data: {e}'}), 500
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001) # Sets program to port 5001, runs.
