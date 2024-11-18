@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ team_info.name }} Stats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>{{ team_info.name }} Stats</h1>
+        <p><strong>Team:</strong> {{ team_info.market }} {{ team_info.name }} ({{ team_info.alias }})</p>
+
+        <h2>Overall Record</h2>
+        <p>Wins: {{ team_info.wins }} | Losses: {{ team_info.losses }} | Ties: {{ team_info.ties }}</p>
+
+        <h2>Offensive Stats</h2>
+        <ul>
+            <li><strong>Passing Yards:</strong> {{ team_info.passing_yards }}</li>
+            <li><strong>Rushing Yards:</strong> {{ team_info.rushing_yards }}</li>
+            <li><strong>Receiving Yards:</strong> {{ team_info.receiving_yards }}</li>
+            <li><strong>Total Touchdowns:</strong> {{ team_info.total_touchdowns }}</li>
+            <li><strong>Passing Touchdowns:</strong> {{ team_info.passing_touchdowns }}</li>
+            <li><strong>Rushing Touchdowns:</strong> {{ team_info.rushing_touchdowns }}</li>
+            <li><strong>Receiving Touchdowns:</strong> {{ team_info.receiving_touchdowns }}</li>
+        </ul>
+
+        <h2>Defensive Stats</h2>
+        <ul>
+            <li><strong>Sacks:</strong> {{ team_info.sacks }}</li>
+            <li><strong>Interceptions:</strong> {{ team_info.interceptions }}</li>
+            <li><strong>Forced Fumbles:</strong> {{ team_info.forced_fumbles }}</li>
+            <li><strong>Opponent Passing Touchdowns:</strong> {{ team_info.opponents_passing_touchdowns }}</li>
+            <li><strong>Opponent Rushing Touchdowns:</strong> {{ team_info.opponents_rushing_touchdowns }}</li>
+        </ul>
+
+        <h2>Special Teams</h2>
+        <ul>
+            <li><strong>Field Goals Made:</strong> {{ team_info.field_goals_made }}</li>
+            <li><strong>Kickoff Return Yards:</strong> {{ team_info.kickoff_returns }}</li>
+        </ul>
+
+        <footer class="mt-4">
+            <p>Data provided by Sportradar API.</p>
+        </footer>
+    </div>
+</html>
