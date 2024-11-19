@@ -2,7 +2,7 @@ This microservice allows you to request information about an NFL team, and recei
 (using the SportRadar API).
 To make a request of the microservice, the requesting program needs to have a team_id variable with the assigned value of 
 a team ID compatable with the API, and have imported 'requests'. The request must be in the format: 
-requests.get("http://localhost:5001/team_stats/{team_id}"), and the dictionary of stats will be received in .json format.
+requests.get("http://localhost:5001/team_stats/{team_id}"), and the dictionary of stats will then be received in .json format.
 
 [Sequence UML](/UML.png)
 
